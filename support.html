@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Support — Primo Reader</title>
+<style>
+:root{--bg:#faf9f7;--fg:#1a1a1a;--muted:#6b6b6b;--accent:#2d6a4f;--card:#ffffff;--border:#e5e2dd;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--fg);line-height:1.65;}
+.wrap{max-width:720px;margin:0 auto;padding:48px 20px;}
+h1{font-size:1.8rem;margin-bottom:4px;}
+.sub{color:var(--muted);margin-bottom:32px;}
+nav{margin-bottom:32px;font-size:.9rem;}
+nav a{color:var(--accent);text-decoration:none;margin-right:14px;}
+h2{font-size:1.15rem;margin:32px 0 12px;padding-top:8px;}
+p,li{font-size:.95rem;margin-bottom:8px;}
+ol,ul{padding-left:22px;}
+.card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:20px 24px;margin:20px 0;}
+.card .mail{font-size:1.05rem;font-weight:600;color:var(--accent);}
+.kbd{background:#eeece8;border-radius:4px;padding:1px 6px;font-family:ui-monospace,monospace;font-size:.85em;}
+footer{margin-top:56px;color:var(--muted);font-size:.82rem;}
+footer a{color:var(--muted);}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<nav><a href="index.html">← Home</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></nav>
+
+<h1>Support</h1>
+<p class="sub">Primo Reader — help, FAQ, and how to reach the developer.</p>
+
+<div class="card">
+  <p>📩 <strong>Email the developer directly</strong> — every message is read and answered by a human (usually within 2–3 days):</p>
+  <p class="mail">amon.hong2013@gmail.com</p>
+  <p style="margin-top:8px;color:var(--muted);font-size:.85rem;">Include your device model, OS version, and — if it's a book-specific problem — attach the file or describe where it came from.</p>
+</div>
+
+<h2>Frequently Asked Questions</h2>
+
+<h3 style="font-size:1rem;margin-bottom:6px;">How do I add my books?</h3>
+<p>Tap <span class="kbd">+</span> in the library and pick an <span class="kbd">.epub</span> or <span class="kbd">.txt</span> file with the system file picker. The file is copied into the app's private storage; the original stays untouched.</p>
+
+<h3 style="font-size:1rem;margin-bottom:6px;">The read-aloud voice sounds robotic. Can I improve it?</h3>
+<p>Primo Reader uses your device's built-in text-to-speech engine. You can get much better voices for <strong>free</strong> from your system settings — no purchase needed:</p>
+<ul>
+  <li><strong>Android:</strong> Settings → System → Text-to-speech → Google Text-to-Speech → install high-quality languages (download the enhanced/neural variants when offered).</li>
+  <li><strong>iOS:</strong> Settings → Accessibility → Spoken Content → Voices → choose a voice marked "Enhanced" or "Premium" and download it.</li>
+</ul>
+<p>Then pick the new voice inside Primo Reader's playback settings. Per-book voice and speed are remembered.</p>
+
+<h3 style="font-size:1rem;margin-bottom:6px;">Read-aloud stops when I lock the screen.</h3>
+<p>On Android, make sure Primo Reader is <strong>not battery-optimized</strong>: Settings → Apps → Primo Reader → Battery → Unrestricted. Playback continues on the lock screen while the app is in the background.</p>
+
+<h3 style="font-size:1rem;margin-bottom:6px;">Why is there no cloud sync?</h3>
+<p>By design. Sync requires accounts and servers, which means your reading data leaves your device. Primo Reader is built so that nothing ever does. If you switch devices, exporting and re-importing your library is on the roadmap.</p>
+
+<h3 style="font-size:1rem;margin-bottom:6px;">Why can't the app find books on its own?</h3>
+<p>Primo Reader does not host, recommend, or search for any content — it is a reader only. You supply the files. This keeps the app legal, simple, and free of any catalogue that could disappear.</p>
+
+<h3 style="font-size:1rem;margin-bottom:6px;">A specific EPUB looks broken (missing images / wrong order).</h3>
+<p>EPUB files vary wildly in quality. Please email the file (or a similar sample) to the address above — compatibility fixes are the top development priority.</p>
+
+<h3 style="font-size:1rem;margin-bottom:6px;">How do I delete all my data?</h3>
+<p>Settings → Clear library data, or simply uninstall the app. Both remove the local database permanently. There is no server copy — deletion is immediate and total.</p>
+
+<h3 style="font-size:1rem;margin-bottom:6px;">Is it really free? What's the catch?</h3>
+<p>The core app is free. A one-time purchase may later unlock optional extras (themes, import batches) — it will <strong>never</strong> be a subscription, and the reading core stays functional regardless.</p>
+
+<h2>Report a bug</h2>
+<p>Email <span class="mail" style="font-size:.95rem;">amon.hong2013@gmail.com</span> with:</p>
+<ol>
+  <li>Device model + OS version</li>
+  <li>Primo Reader version (Settings → About)</li>
+  <li>What you tapped, what you expected, what happened</li>
+</ol>
+
+<footer>
+  <a href="index.html">Home</a> · <a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a><br>
+  © 2026 Primo Reader
+</footer>
+
+</div>
+</body>
+</html>

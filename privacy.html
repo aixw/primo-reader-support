@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Primo Reader</title>
+<style>
+:root{--bg:#faf9f7;--fg:#1a1a1a;--muted:#6b6b6b;--accent:#2d6a4f;--card:#ffffff;--border:#e5e2dd;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--fg);line-height:1.7;}
+.wrap{max-width:720px;margin:0 auto;padding:48px 20px;}
+h1{font-size:1.8rem;margin-bottom:4px;}
+h2{font-size:1.15rem;margin:36px 0 12px;padding-top:8px;border-top:1px solid var(--border);}
+h3{font-size:1rem;margin:20px 0 8px;}
+p,li{font-size:.94rem;margin-bottom:8px;}
+ol,ul{padding-left:22px;}
+.sub{color:var(--muted);margin-bottom:24px;}
+nav{margin-bottom:32px;font-size:.9rem;}
+nav a{color:var(--accent);text-decoration:none;margin-right:14px;}
+.highlight{background:#e8f2ec;border-left:4px solid var(--accent);padding:14px 18px;border-radius:0 8px 8px 0;margin:16px 0;font-size:.95rem;}
+table{border-collapse:collapse;width:100%;font-size:.88rem;margin:12px 0;}
+td,th{border:1px solid var(--border);padding:6px 10px;text-align:left;}
+footer{margin-top:56px;color:var(--muted);font-size:.82rem;}
+footer a{color:var(--muted);}
+.mail{color:var(--accent);font-weight:600;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<nav><a href="index.html">← Home</a><a href="support.html">Support</a><a href="terms.html">Terms</a></nav>
+
+<h1>Privacy Policy</h1>
+<p class="sub">Last updated: 2026-09-14 · Effective date: 2026-09-14</p>
+
+<div class="highlight">
+<strong>Short version: Primo Reader is fully offline. We do not collect, transmit, sell, share, or otherwise process any personal data.</strong> The application makes no outbound network requests in normal use. There is no server, no account, no analytics SDK, no crash reporter, no advertising SDK, no third-party tracker of any kind.
+</div>
+
+<h2>1. Information we do NOT collect</h2>
+<p>The Application does <strong>not</strong> collect:</p>
+<ul>
+  <li>Personal identifiers (name, email, phone number, postal address)</li>
+  <li>Account credentials</li>
+  <li>Device identifiers for tracking purposes</li>
+  <li>Location data (GPS, IP-based geolocation, cell/wifi triangulation)</li>
+  <li>Usage analytics or telemetry</li>
+  <li>Crash reports or diagnostic data</li>
+  <li>Ad identifiers (GAID/IDFA) or fingerprinting signals</li>
+  <li>Book metadata, reading progress, bookmarks, or any content you load</li>
+</ul>
+
+<h2>2. Information stored locally on your device</h2>
+<p>The following information is stored <strong>only on your device</strong>, in a SQLite database file inside the application's sandboxed storage, and is never transmitted to us or any third party:</p>
+<ul>
+  <li>Books you import (file paths only; the application reads file contents from your file system but does not exfiltrate them)</li>
+  <li>Reading position, bookmarks, and per-book settings</li>
+  <li>Application preferences (font size, theme, TTS voice, default speed, …)</li>
+</ul>
+<p>You can wipe this data at any time via the application's Settings screen, or by uninstalling the application (which also deletes the database file).</p>
+
+<h2>3. Network activity</h2>
+<p>In normal use the Application makes <strong>no outbound network requests</strong> of any kind.</p>
+<p>If you grant the Application permission to read books from cloud storage (e.g. Google Drive, iCloud Drive) in the future, your file picker will communicate with the corresponding operating-system service; that communication is governed by Google/Apple's privacy policies, not ours.</p>
+
+<h2>4. Children</h2>
+<p>The Application is rated <strong>Everyone / 4+</strong> and does not target minors. We do not knowingly collect data from children under 13 (COPPA), under 16 (GDPR-K), or any other age threshold. Because we collect no data at all, this is trivially satisfied.</p>
+
+<h2>5. International compliance</h2>
+<p>Because we collect no data, the following regulations are satisfied by construction:</p>
+<table>
+  <tr><th>Regulation</th><th>Jurisdiction</th></tr>
+  <tr><td>GDPR (Regulation 2016/679)</td><td>European Union / EEA</td></tr>
+  <tr><td>UK GDPR + DPA 2018</td><td>United Kingdom</td></tr>
+  <tr><td>CCPA / CPRA</td><td>California, USA</td></tr>
+  <tr><td>PIPEDA</td><td>Canada</td></tr>
+  <tr><td>LGPD (Lei 13.709/2018)</td><td>Brazil</td></tr>
+  <tr><td>PDPA</td><td>Singapore / Thailand</td></tr>
+  <tr><td>APPI</td><td>Japan</td></tr>
+</table>
+<p>You retain all rights available to you under your local data-protection law (access, rectification, erasure, portability, objection), and you can exercise each of these by simply clearing the Application's local storage or uninstalling.</p>
+
+<h2>6. International transfers</h2>
+<p>We make no international transfers of personal data because we have no personal data.</p>
+
+<h2>7. Changes to this policy</h2>
+<p>If we ever add a feature that requires any data to leave your device — for example, optional cloud sync, crash reporting, or analytics — we will:</p>
+<ol>
+  <li>Update this policy with a new effective date and a diff summary.</li>
+  <li>Surface a re-consent prompt on the next application launch.</li>
+  <li>Provide an opt-out path that retains current offline behavior.</li>
+</ol>
+
+<h2>8. Contact</h2>
+<p>For any privacy question, complaint, or data-subject request, contact the developer:</p>
+<p><strong>Email: <span class="mail">amon.hong2013@gmail.com</span></strong></p>
+<p>We do not operate a corporate entity; this address is monitored by the sole maintainer.</p>
+
+<footer>
+  <a href="index.html">Home</a> · <a href="support.html">Support</a> · <a href="terms.html">Terms of Service</a><br>
+  © 2026 Primo Reader · This document is licensed CC-BY-4.0.
+</footer>
+
+</div>
+</body>
+</html>
