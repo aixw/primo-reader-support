@@ -50,8 +50,25 @@ footer a{color:var(--muted);}
 </ul>
 <p>Then pick the new voice inside Primo Reader's playback settings. Per-book voice and speed are remembered.</p>
 
-<h3 style="font-size:1rem;margin-bottom:6px;">Read-aloud stops when I lock the screen.</h3>
-<p>On Android, make sure Primo Reader is <strong>not battery-optimized</strong>: Settings → Apps → Primo Reader → Battery → Unrestricted. Playback continues on the lock screen while the app is in the background.</p>
+<h3 style="font-size:1rem;margin-bottom:6px;">Read-aloud stops when I lock the screen / switch apps.</h3>
+<div class="card" style="padding:16px 20px;">
+<p><strong>This is the #1 issue on Android, and it's a settings problem, not an app bug.</strong> Many phone brands add their own aggressive battery managers on top of Android. These ignore the standard "unrestricted battery" setting, so you may need to flip a second, brand-specific switch. Follow the steps in order:</p>
+<ol>
+  <li><strong>Standard Android setting (always do this first):</strong> Settings → Apps → Primo Reader → Battery → <strong>Unrestricted</strong> (a.k.a. "not optimized").</li>
+  <li><strong>Your phone brand's own background-power switch</strong> — the exact name varies by brand, look for "background power management", "background power drain", "battery saver policy" or "auto-launch" inside the battery or app-management settings:
+    <ul>
+      <li>Phones with a <em>“后台耗电管理 / Background power management”</em> list under Settings → Battery: set Primo Reader to <strong>allow background activity</strong>.</li>
+      <li>Phones with a <em>“省电策略 / Battery saver policy”</em> option on each app's page: choose <strong>No restrictions / Unrestricted</strong>.</li>
+      <li>Phones with an <em>“auto-launch / launch manager”</em> on each app's page: disable "manage automatically" and allow all three toggles.</li>
+    </ul>
+  </li>
+  <li><strong>Notification &amp; lock-screen controls:</strong> if playback works in the background but you don't see the media card on the lock screen, check Settings → Notifications → Primo Reader → allowed, and the system's "lock screen notifications" style setting (some brands default to hiding them).</li>
+</ol>
+<p style="margin-top:10px;color:var(--muted);font-size:.85rem;">The in-app prompt links to the battery settings; the brand-specific switch must be flipped manually — no app can change it for you (Android security model).</p>
+</div>
+
+<h3 style="font-size:1rem;margin-bottom:6px;">I don't see the media controls on the lock screen / notification shade.</h3>
+<p>Check, in order: (1) notifications for Primo Reader are enabled; (2) your phone's "lock screen notifications" is set to <strong>show all notifications</strong> — several brands default to hiding them; (3) start playback once with the app in the foreground — controls appear on the first play and persist while the app is alive. If they disappear after pausing/resuming, that was a bug fixed in recent versions: update the app.</p>
 
 <h3 style="font-size:1rem;margin-bottom:6px;">Why is there no cloud sync?</h3>
 <p>By design. Sync requires accounts and servers, which means your reading data leaves your device. Primo Reader is built so that nothing ever does. If you switch devices, exporting and re-importing your library is on the roadmap.</p>
